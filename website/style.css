@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgb(14, 17, 19);
+    color:white;
+}
+.navbar{
+    margin-left: auto;
+}
+.navbar a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #ffffff;
+}
+/* hero*/
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background-color: #2563eb;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 7vmin;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 18px;
+    margin: auto;
+    max-width: 650px;
+}
+
+/* button*/
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+
+    padding: 13px 30px;
+
+    background-color: #ffffff;
+    color: #2563eb;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #dbeafe;
+    transform: translateY(-2px);
+}
+
+
+/*services*/
+
+.services {
+    padding: 80px 8%;
+}
+
+.text{
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.card h3 {
+    font-size: 6vmin;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 3vmin;
+    
+}
+
+
+
+.services-cards {
+    padding: 35px 25px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+    
+}
+.card{
+    text-align: center;
+    height: 210px;
+    background-color: #6c96d4;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 9px gray;
+    
+}
+.card:hover{
+    transition: 0.3s;
+    transform: translateY(-9px);
+    background: #f18d7f;
+}
+.services-card p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* About Content */
+.about {
+    min-height: 200px;
+    background-color: #8bb5ec;
+    
+    
+    
+    
+}
+.about h1 {
+    text-align: center; 
+    
+}
+.about p {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.about-section {
+    padding: 80px 8%;
+    background: #ffffff;
+    
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: auto;
+    height: 50vh;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+
+.about-text h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-left: 17px;
+}
+
+.about-text p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+.about-box {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+.text{
+    width: 100%;
+    background: #6b7280;
+    box-shadow: 0 4px 7px gray;
+    text-align: center;
+    padding: 18px;
+    border-radius: 7px;
+    
+}
+.text:hover{
+    background-color: #8bb5ec;
+    transition: 0.3s;
+    transform: translateY(-8px);
+    
+}
+/*_________________Contact Form__________________*/
+
+.contact{
+    background: #e0e0e0;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #bebebe, -10px -10px 30px #ffffff;
+    width: 300px;
+    margin: 50px auto;
+
+}
+.contact h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color:#333;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 5px #bebebe, inset -5px -5px 10px #ffffff;
+    resize: none;
+}
+button{
+    
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 5px #bebebe, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    
+}
+button:hover{
+    box-shadow: inset 5px 5px 5px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+
+@media(max-width: 768px) {
+    .services-cards {
+        grid-template-columns: 1fr;
+    }
+    .about-box{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        width: 90%;
+    }
+    .about-section{
+        width: 90%;
+    }
+    
+    
+    
+}
