@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">website</div>
+         <nav class="navbar">
+            
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        
+         </nav>
+    </header>
+    <section class="content">
+        
+    <div class="sub">
+        
+    <h2>All submissionss</h2>
+    </div>
+    <ul id="list"></ul>
+    </section>
+
+   <script> 
+        let submissions = JSON.parse(localStorage.getItem("contacts")) || [];
+        let list = document.getElementById("list");
+        submissions.forEach(s => {
+            list.innerHTML += `<li>${s.name} - ${s.email} - ${s.message}</li>`;
+            
+        });
+    </script>
+    
+</body>
+</html>
